@@ -1,0 +1,1 @@
+web: gunicorn deadman_bot:app 
