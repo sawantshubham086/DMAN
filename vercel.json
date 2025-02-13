@@ -1,16 +1,9 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "deadman_bot.py",
-      "use": "@vercel/python",
-      "config": { "runtime": "python3.9", "maxDuration": 30 }
-    }
+    { "src": "deadman_bot.py", "use": "@vercel/python" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "deadman_bot.py"
-    }
+    { "src": "/(.*)", "dest": "deadman_bot.py" }
   ]
 }
